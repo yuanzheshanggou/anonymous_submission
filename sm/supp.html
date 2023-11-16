@@ -21,12 +21,12 @@
 	<a href="#top"></a>
   <ul>
 	<li><a href="#our_results_container">Our Results</a></li>
-  <li><a href="#our_results_pp_container">Our Results combined with post-process deflickering</a></li>
-  <li><a href="#our_results_others_container">Results of our method with a different image-editing technique</a></li>
+  <!-- <li><a href="#our_results_pp_container">Our Results combined with post-process deflickering</a></li> -->
+  <!-- <li><a href="#our_results_others_container">Results of our method with a different image-editing technique</a></li> -->
 	<li><a href="#comparisons_baselines_container">Comparisons to Baselines</a></li>
-    <li><a href="#additional_qual_comp">Additional Qualitative Comparisons</a></li>
+    <!-- <li><a href="#additional_qual_comp">Additional Qualitative Comparisons</a></li> -->
     <li><a href="#Ablations">Ablations</a></li>
-    <li><a href="#pca">Diffusion Features PCA Visualizations</a></li>
+    <!-- <li><a href="#pca">Diffusion Features PCA Visualizations</a></li> -->
   </ul>
   <!-- <p><br><span class="emph">We recommend watching all images in full screen. Click on the images for seeing them in full scale.</span></p> -->
 	
@@ -55,77 +55,77 @@
 			<th>C</th> -->
                 <tr>
                     <th style="font-size: 16px">Input video</th>
-                    <th style="font-family: Chalkduster">"Sahara desert, a cheeta looking out the car window"</th>
-                    <th style="font-family: Chalkduster">"The dolomites, a bear cub looking out of a car window"</th>
-                    <th style="font-family: Chalkduster">"Machu pichu, a wolf looking out of a car window"</th>
+                    <th style="font-family: Chalkduster">"A husky"</th>
+                    <th style="font-family: Chalkduster">"A bronze sculpture"</th>
+                    <th style="font-family: Chalkduster">"A pig"</th>
                 </tr>
                 <tr>
-                    <th><a href="assets/dog_car/input_fps30.mp4"> <a href="assets/dog_car/input_fps30.mp4"> <video  width="300" src="assets/dog_car/input_fps30.mp4" autoplay loop controls muted /> </a> </a></th>
-                    <th><a href="assets/dog_car/Sahara desert, a cheeta looking out the car window/result_fps_30.mp4"> <a href="assets/dog_car/Sahara desert, a cheeta looking out the car window/result_fps_30.mp4"> <video  width="300" src="assets/dog_car/Sahara desert, a cheeta looking out the car window/result_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
-                    <th><a href="assets/dog_car/the dolomites, a bear cub looking out of a car window/result_fps_30.mp4"> <a href="assets/dog_car/the dolomites, a bear cub looking out of a car window/result_fps_30.mp4"> <video  width="300" src="assets/dog_car/the dolomites, a bear cub looking out of a car window/result_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
-                    <th><a href="assets/dog_car/machu pichu, a wolf looking out of a car window/result_fps_30.mp4"> <a href="assets/dog_car/machu pichu, a wolf looking out of a car window/result_fps_30.mp4"> <video  width="300" src="assets/dog_car/machu pichu, a wolf looking out of a car window/result_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
+                    <th><a href="assets/wolf.mp4"> <a href="assets/wolf.mp4"> <video  width="300" src="assets/wolf.mp4" autoplay loop controls muted /> </a> </a></th>
+                    <th><a href="assets/wolf_husky.mp4"> <a href="assets/wolf_husky.mp4"> <video  width="300" src="assets/wolf_husky.mp4" autoplay loop controls muted/> </a> </a></th>
+                    <th><a href="assets/wolf_bronze-sculpture.mp4"> <a href="assets/wolf_bronze-sculpture.mp4"> <video  width="300" src="assets/wolf_bronze-sculpture.mp4" autoplay loop controls muted/> </a> </a></th>
+                    <th><a href="assets/wolf_pig(Ours).mp4"> <a href="assets/wolf_pig(Ours).mp4"> <video  width="300" src="assets/wolf_pig(Ours).mp4" autoplay loop controls muted/> </a> </a></th>
                 </tr>
                 <tr>
                   <th style="font-size: 16px">Input video</th>
-                  <th style="font-family: Chalkduster">"Van-Gogh style portrait of a man spinning a basketball"</th>
-                  <th style="font-family: Chalkduster">"a silver shiny robot spinning a shiny silver ball on his finger"</th>
-                  <th style="font-family: Chalkduster">"the milky way, a star wars clone trooper spinning a planet"</th>
+                  <th style="font-family: Chalkduster">"A pink car"</th>
+                  <th style="font-family: Chalkduster">"An ice sculpture of a car"</th>
+                  <th style="font-family: Chalkduster">"A sand sculpture of a car"</th>
               </tr>
               <tr>
-                  <th><a href="assets/man_basket/"> <a href="assets/man_basket/input_fps30.mp4"> <video  width="300" src="assets/man_basket/input_fps30.mp4" autoplay loop controls muted /> </a> </a></th>
-                  <th><a href="assets/man_basket/Van-Gogh style portrait of a man spinning a basketball, oil painting, art by Van Gogh, 8k/result_fps_30.mp4"> <a href="assetsman_basket/Van-Gogh style portrait of a man spinning a basketball, oil painting, art by Van Gogh, 8k/result_fps_30.mp4"> <video  width="300" src="assets/man_basket/Van-Gogh style portrait of a man spinning a basketball, oil painting, art by Van Gogh, 8k/result_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
-                  <th><a href="assets/man_basket/a silver shiny robot spinning a shiny silver ball on his finger/result_fps_30.mp4"> <a href="assets/man_basket/a silver shiny robot spinning a shiny silver ball on his finger/result_fps_30.mp4"> <video  width="300" src="assets/man_basket/a silver shiny robot spinning a shiny silver ball on his finger/result_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
-                  <th><a href="assets/man_basket/the milky way, a star wars clone trooper spinning the moon on his finger, planet earth, in the backgound/result_fps_30.mp4"> <a href="assets/man_basket/the milky way, a star wars clone trooper spinning the moon on his finger, planet earth, in the backgound/result_fps_30.mp4"> <video  width="300" src="assets/man_basket/the milky way, a star wars clone trooper spinning the moon on his finger, planet earth, in the backgound/result_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
+                  <th><a href="assets/tesla.mp4"> <a href="assets/tesla.mp4"> <video  width="300" src="assets/tesla.mp4" autoplay loop controls muted /> </a> </a></th>
+                  <th><a href="assets/tesla_pink-car.mp4"> <a href="assetstesla_pink-car.mp4"> <video  width="300" src="assets/tesla_pink-car.mp4" autoplay loop controls muted/> </a> </a></th>
+                  <th><a href="assets/tesla_ice-sculpture.mp4"> <a href="assets/tesla_ice-sculpture.mp4"> <video  width="300" src="assets/tesla_ice-sculpture.mp4" autoplay loop controls muted/> </a> </a></th>
+                  <th><a href="assets/tesla_sand-sculpture.mp4"> <a href="assets/tesla_sand-sculpture.mp4"> <video  width="300" src="assets/tesla_sand-sculpture.mp4" autoplay loop controls muted/> </a> </a></th>
               </tr>
                 <tr>
                     <th style="font-size: 16px">Input video</th>
-                    <th style="font-family: Chalkduster">"a bronze eagle sculpture"</th>
-                    <th style="font-family: Chalkduster">"an origami of an eagle,  colorful japanses washi patterns"</th>
-                    <th style="font-family: Chalkduster">"an origami of an eagle, pink paper art"</th>
+                    <th style="font-family: Chalkduster">"A bus"</th>
+                    <th style="font-family: Chalkduster">"Van-Gogh style, a bus"</th>
+                    <th style="font-family: Chalkduster">"A bus on the road, snowy day"</th>
                 </tr>
                 <tr>
-                  <th><a href="assets/eagle_face/input_fps30.mp4"> <a href="assets/eagle_face/input_fps30.mp4"> <video  width="300" src="assets/eagle_face/input_fps30.mp4" autoplay loop controls muted /> </a> </a></th>
-                  <th><a href="assets/eagle_face/a bronze eagle sculpture in a stormy sky, powerfull, beautiful art/result_fps_30.mp4"> <a href="assets/eagle_face/a bronze eagle sculpture in a stormy sky, powerfull, beautiful art/result_fps_30.mp4"> <video  width="300" src="assets/eagle_face/a bronze eagle sculpture in a stormy sky, powerfull, beautiful art/result_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
-                  <th><a href="assets/eagle_face/an origami of an eagle, paper art, colorful japanses washi patterns/result_fps_30.mp4"> <a href="assets/eagle_face/an origami of an eagle, paper art, colorful japanses washi patterns/result_fps_30.mp4"> <video  width="300" src="assets/eagle_face/an origami of an eagle, paper art, colorful japanses washi patterns/result_fps_30.mp4" autoplay loop controls muted/> </a></th>
-                  <th><a href="assets/eagle_face/an origami of an eagle, pink paper art, pink, japanses, washi patterns/result_fps_30.mp4"> <a href="assets/eagle_face/an origami of an eagle, pink paper art, pink, japanses, washi patterns/result_fps_30.mp4"> <video  width="300" src="assets/eagle_face/an origami of an eagle, pink paper art, pink, japanses, washi patterns/result_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
+                  <th><a href="assets/bus.mp4"> <a href="assets/bus.mp4"> <video  width="300" src="assets/bus.mp4" autoplay loop controls muted /> </a> </a></th>
+                  <th><a href="assets/bus_vangoh(Ours).mp4"> <a href="assets/bus_vangoh(Ours).mp4"> <video  width="300" src="assets/bus_vangoh(Ours).mp4" autoplay loop controls muted/> </a> </a></th>
+                  <th><a href="assets/bus_snowy(Ours)"> <a href="assets/bus_snowy(Ours)"> <video  width="300" src="assets/bus_snowy(Ours)" autoplay loop controls muted/> </a></th>
+                  <!-- <th><a href="assets/eagle_face/an origami of an eagle, pink paper art, pink, japanses, washi patterns/result_fps_30.mp4"> <a href="assets/eagle_face/an origami of an eagle, pink paper art, pink, japanses, washi patterns/result_fps_30.mp4"> <video  width="300" src="assets/eagle_face/an origami of an eagle, pink paper art, pink, japanses, washi patterns/result_fps_30.mp4" autoplay loop controls muted/> </a> </a></th> -->
               </tr>
               <tr>
                 <th style="font-size: 16px">Input video</th>
-                <th style="font-family: Chalkduster">"a pixar animation of a woman running"</th>
-                <th style="font-family: Chalkduster">"a marble scuplture of a woman running"</th>
-                <th style="font-family: Chalkduster">"Maui in Moana Movie"</th>
+                <!-- <th style="font-family: Chalkduster">"Blackswan"</th> -->
+                <th style="font-family: Chalkduster">"Van Gogh Starry Night style, a swan"</th>
+                <th style="font-family: Chalkduster">"A white swan, in the ice and snow"</th>
             </tr>
                 <tr>
-                    <th><a href="assets/woman-running/input_fps30.mp4"> <a href="assets/woman-running/input_fps30.mp4"> <video  width="300" src="assets/woman-running/input_fps30.mp4" autoplay loop controls muted /> </a> </a></th>
-                    <th><a href="assets/woman-running/a pixar animation of a woman running, beautiful eyes/result_fps_30.mp4"> <a href="assets/woman-running/a pixar animation of a woman running, beautiful eyes/result_fps_30.mp4"> <video  width="300" src="assets/woman-running/a pixar animation of a woman running, beautiful eyes/result_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
-                    <th><a href="assets/woman-running/a marble scuplture of a woman running/result_fps_30.mp4"> <a href="assets/woman-running/a marble scuplture of a woman running/result_fps_30.mp4"> <video  width="300" src="assets/woman-running/a marble scuplture of a woman running/result_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
-                    <th><a href="assets/woman-running/Maui in Moana Movie, realistic face, beautiful face, 8k, art by irakli nadar, hyperrealism, hyperdetailed, ultra realistic, VRAY, HDR, volumetric lighting/result_fps_30.mp4"> <a href="assets/woman-running/Maui in Moana Movie, realistic face, beautiful face, 8k, art by irakli nadar, hyperrealism, hyperdetailed, ultra realistic, VRAY, HDR, volumetric lighting/result_fps_30.mp4"> <video  width="300" src="assets/woman-running/Maui in Moana Movie, realistic face, beautiful face, 8k, art by irakli nadar, hyperrealism, hyperdetailed, ultra realistic, VRAY, HDR, volumetric lighting/result_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
+                    <th><a href="assets/blackswan.mp4"> <a href="assets/blackswan.mp4"> <video  width="300" src="assets/blackswan.mp4" autoplay loop controls muted /> </a> </a></th>
+                    <th><a href="assets/blackswan_vangoh(Ours).mp4"> <a href="assets/blackswan_vangoh(Ours).mp4"> <video  width="300" src="assets/blackswan_vangoh(Ours).mp4" autoplay loop controls muted/> </a> </a></th>
+                    <th><a href="assets/blackswan-whiteswan(Ours).mp4"> <a href="assets/blackswan-whiteswan(Ours).mp4"> <video  width="300" src="assets/blackswan-whiteswan(Ours).mp4" autoplay loop controls muted/> </a> </a></th>
+                    <!-- <th><a href="assets/woman-running/Maui in Moana Movie, realistic face, beautiful face, 8k, art by irakli nadar, hyperrealism, hyperdetailed, ultra realistic, VRAY, HDR, volumetric lighting/result_fps_30.mp4"> <a href="assets/woman-running/Maui in Moana Movie, realistic face, beautiful face, 8k, art by irakli nadar, hyperrealism, hyperdetailed, ultra realistic, VRAY, HDR, volumetric lighting/result_fps_30.mp4"> <video  width="300" src="assets/woman-running/Maui in Moana Movie, realistic face, beautiful face, 8k, art by irakli nadar, hyperrealism, hyperdetailed, ultra realistic, VRAY, HDR, volumetric lighting/result_fps_30.mp4" autoplay loop controls muted/> </a> </a></th> -->
                 </tr>
                 <tr>
                   <th style="font-size: 16px">Input video</th>
-                  <th style="font-family: Chalkduster">"a shiny silver robotic wolf, futuristic"</th>
-                  <th style="font-family: Chalkduster">"a colorful polygonal illustration of a wolf"</th>
-                  <th style="font-family: Chalkduster">"a photo of a fluffy wolf doll"</th>
+                  <th style="font-family: Chalkduster">"Van Gogh style, flamingo"</th>
+                  <th style="font-family: Chalkduster">"Flamingo in the space"</th>
+                  <!-- <th style="font-family: Chalkduster">"a photo of a fluffy wolf doll"</th> -->
               </tr>
               <tr>
-                  <th><a href="assets/wolf-part/input_fps20.mp4"> <a href="assets/wolf-part/input_fps20.mp4"> <video  width="300" src="assets/wolf-part/input_fps20.mp4" autoplay loop controls muted /> </a> </a></th>
-                  <th><a href="assets/wolf-part/a shiny silver robotic wolf, futuristic, 8K, masterpiece, award winning/result_fps_20.mp4"> <a href="assets/wolf-part/a shiny silver robotic wolf, futuristic, 8K, masterpiece, award winning/result_fps_30.mp4"> <video  width="300" src="assets/wolf-part/a shiny silver robotic wolf, futuristic, 8K, masterpiece, award winning/result_fps_20.mp4" autoplay loop controls muted/> </a> </a></th>
-                  <th><a href="assets/wolf-part/a colorful polygonal illustration of a wolf/result_fps_20.mp4"> <a href="assets/wolf-part/a colorful polygonal illustration of a wolf/result_fps_20.mp4" ></a><video  width="300" src="assets/wolf-part/a colorful polygonal illustration of a wolf/result_fps_20.mp4" autoplay loop controls muted/> </a> </a></th>
-                  <th><a href="assets/wolf-part/a photo of a fluffy wolf doll/result_fps_20.mp4"> <a href="assets/wolf-part/a photo of a fluffy wolf doll/result_fps_20.mp4" ></a><video  width="300" src="assets/wolf-part/a photo of a fluffy wolf doll/result_fps_20.mp4" autoplay loop controls muted/> </a> </a></th>
+                  <th><a href="assets/flamingo.mp4"> <a href="assets/flamingo.mp4"> <video  width="300" src="assets/flamingo.mp4" autoplay loop controls muted /> </a> </a></th>
+                  <th><a href="assets/flamingo_vangoh.mp4"> <a href="assets/flamingo_vangoh.mp4"> <video  width="300" src="assets/flamingo_vangoh.mp4" autoplay loop controls muted/> </a> </a></th>
+                  <th><a href="assets/flamingo_space.mp4"> <a href="assets/flamingo_space.mp4" ></a><video  width="300" src="assets/flamingo_space.mp4" autoplay loop controls muted/> </a> </a></th>
+                  <!-- <th><a href="assets/wolf-part/a photo of a fluffy wolf doll/result_fps_20.mp4"> <a href="assets/wolf-part/a photo of a fluffy wolf doll/result_fps_20.mp4" ></a><video  width="300" src="assets/wolf-part/a photo of a fluffy wolf doll/result_fps_20.mp4" autoplay loop controls muted/> </a> </a></th> -->
               </tr>
                 <tr>
                   <th style="font-size: 16px">Input video</th>
-                  <th style="font-family: Chalkduster">"a pink car in a snowy landscape, sunset lighting"</th>
-                  <th style="font-family: Chalkduster">"an ice sculpture of a car"</th>
-                  <th style="font-family: Chalkduster">"a sand sculpture of a car on the beach"</th>
+                  <th style="font-family: Chalkduster">"Van Gogh Starry Night style, gold-fish"</th>
+                  <th style="font-family: Chalkduster">"Dark sea, fishes"</th>
+                  <!-- <th style="font-family: Chalkduster">"a sand sculpture of a car on the beach"</th> -->
               </tr>
               <tr>
-                  <th><a href="assets/tesla/input_fps30.mp4"> <a href="assets/tesla/input_fps30.mp4"> <video  width="300" src="assets/tesla/input_fps30.mp4" autoplay loop controls muted /> </a> </a></th>
-                  <th><a href="assets/tesla/a pink car in a snowy landscape, pink car license, an icy road lake, sunset lighting, golden hour, 8K, masterpiece, award winning/result_fps_30.mp4"> <a href="assets/tesla/a pink car in a snowy landscape, pink car license, an icy road lake, sunset lighting, golden hour, 8K, masterpiece, award winning/result_fps_30.mp4"> <video  width="300" src="assets/tesla/a pink car in a snowy landscape, pink car license, an icy road lake, sunset lighting, golden hour, 8K, masterpiece, award winning/result_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
-                  <th><a href="assets/tesla/an ice sculpture of a car, award winning ice scuplture, icy wheels, beautiful ice art, HD, masterpiece, award winning/result_fps_30.mp4"> <a href="assets/tesla/an ice sculpture of a car, award winning ice scuplture, icy wheels, beautiful ice art, HD, masterpiece, award winning/result_fps_30.mp4"> <video  width="300" src="assets/tesla/an ice sculpture of a car, award winning ice scuplture, icy wheels, beautiful ice art, HD, masterpiece, award winning/result_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
-                  <th><a href="assets/tesla/a sand sculpture of a car on the beach, sand sculpting, sandy wheels, sand made, beautiful sand art, HD, masterpiece, award winning/result_fps_30.mp4"> <a href="assets/tesla/a sand sculpture of a car on the beach, sand sculpting, sandy wheels, sand made, beautiful sand art, HD, masterpiece, award winning/result_fps_30.mp4"> <video  width="300" src="assets/tesla/a sand sculpture of a car on the beach, sand sculpting, sandy wheels, sand made, beautiful sand art, HD, masterpiece, award winning/result_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
+                  <th><a href="assets/gold-fish.mp4"> <a href="assets/gold-fish.mp4"> <video  width="300" src="assets/gold-fish.mp4" autoplay loop controls muted /> </a> </a></th>
+                  <th><a href="assets/gold-fish_vangoh(Ours).mp4"> <a href="assets/gold-fish_vangoh(Ours).mp4"> <video  width="300" src="assets/gold-fish_vangoh(Ours).mp4" autoplay loop controls muted/> </a> </a></th>
+                  <th><a href="assets/gold-fish_darksea.mp4"> <a href="assets/gold-fish_darksea.mp4"> <video  width="300" src="assets/gold-fish_darksea.mp4" autoplay loop controls muted/> </a> </a></th>
+                  <!-- <th><a href="assets/tesla/a sand sculpture of a car on the beach, sand sculpting, sandy wheels, sand made, beautiful sand art, HD, masterpiece, award winning/result_fps_30.mp4"> <a href="assets/tesla/a sand sculpture of a car on the beach, sand sculpting, sandy wheels, sand made, beautiful sand art, HD, masterpiece, award winning/result_fps_30.mp4"> <video  width="300" src="assets/tesla/a sand sculpture of a car on the beach, sand sculpting, sandy wheels, sand made, beautiful sand art, HD, masterpiece, award winning/result_fps_30.mp4" autoplay loop controls muted/> </a> </a></th> -->
               </tr>
-              <tr>
+              <!-- <tr>
                 <th style="font-size: 16px">Input video</th>
                 <th style="font-family: Chalkduster">"a greek marble sculpture"</th>
                 <th style="font-family: Chalkduster">"Van-Gogh style portrait"</th>
@@ -144,136 +144,13 @@
                   <th><a href="assets/kittens/input_fps30.mp4"> <a href="assets/kittens/input_fps30.mp4"> <video  width="300" src="assets/kittens/input_fps30.mp4" autoplay loop controls muted /> </a> </a></th>
                   <th><a href="assets/kittens/colorful crochet kittens, beautiful knitting/result_fps_30.mp4"> <a href="assets/kittens/colorful crochet kittens, beautiful knitting/result_fps_30.mp4"> <video  width="300" src="assets/kittens/colorful crochet kittens, beautiful knitting/result_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
                   <th><a href="assets/kittens/shiny silver robotic cats eating/result_fps_30.mp4"> <a href="assets/kittens/shiny silver robotic cats eating/result_fps_30.mp4" ></a><video  width="300" src="assets/kittens/shiny silver robotic cats eating/result_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
-              </tr>
+              </tr> -->
 
               <tr> <td><br /></td> </tr>
 		</tbody>
 	</table>
     <!------------------ END SECTION ------------------>
 
-    <!------------------ BEGIN SECTION ------------------>
-
-  <p>&nbsp;</p>
-  <hr>
-	
-  <h2 id="our_results_pp_container" align="left"><a name="image-results" id="image-results"></a>Our Results combined with post-process deflickering</h2>
-
-
-  <p align="left">
-    We present sample results of our method combined with post process de-flickering. 
-  </p>
-
-  
-  <table  width="600" align="center">
-		<tbody>
-          <th style="font-size: 16px">Input video</th>
-          <th style="font-family: Chalkduster">"Van-Gogh style portrait of a man spinning a basketball"</th>
-          <th style="font-family: Chalkduster">"a silver shiny robot spinning a shiny silver ball on his finger"</th>
-          <th style="font-family: Chalkduster">"the milky way, a star wars clone trooper spinning a planet"</th>
-      <tr>
-        <th><a href="assets/man_basket/"> <a href="assets/man_basket/input_fps30.mp4"> <video  width="300" src="assets/man_basket/input_fps30.mp4" autoplay loop controls muted /> </a> </a></th>
-        <th><a href="assets/man_basket/Van-Gogh style portrait of a man spinning a basketball, oil painting, art by Van Gogh, 8k/pp_fps30.mp4"> <a href="assetsman_basket/Van-Gogh style portrait of a man spinning a basketball, oil painting, art by Van Gogh, 8k/pp_fps30.mp4"> <video  width="300" src="assets/man_basket/Van-Gogh style portrait of a man spinning a basketball, oil painting, art by Van Gogh, 8k/pp_fps30.mp4" autoplay loop controls muted/> </a> </a></th>
-        <th><a href="assets/man_basket/a silver shiny robot spinning a shiny silver ball on his finger/pp_fps30.mp4"> <a href="assets/man_basket/a silver shiny robot spinning a shiny silver ball on his finger/pp_fps30.mp4"> <video  width="300" src="assets/man_basket/a silver shiny robot spinning a shiny silver ball on his finger/pp_fps30.mp4" autoplay loop controls muted/> </a> </a></th>
-        <th><a href="assets/man_basket/the milky way, a star wars clone trooper spinning the moon on his finger, planet earth, in the backgound/pp_fps30.mp4"> <a href="assets/man_basket/the milky way, a star wars clone trooper spinning the moon on his finger, planet earth, in the backgound/pp_fps30.mp4"> <video  width="300" src="assets/man_basket/the milky way, a star wars clone trooper spinning the moon on his finger, planet earth, in the backgound/pp_fps30.mp4" autoplay loop controls muted/> </a> </a></th>
-    </tr>
-    <tr>
-      <th style="font-size: 16px">Input video</th>
-      <th style="font-family: Chalkduster">"a shiny silver robotic wolf, futuristic"</th>
-      <th style="font-family: Chalkduster">"a colorful polygonal illustration of a wolf"</th>
-      <th style="font-family: Chalkduster">"a photo of a fluffy wolf doll"</th>
-  </tr>
-  <tr>
-      <th><a href="assets/wolf-part/input_fps20.mp4"> <a href="assets/wolf-part/input_fps20.mp4"> <video  width="300" src="assets/wolf-part/input_fps20.mp4" autoplay loop controls muted /> </a> </a></th>
-      <th><a href="assets/wolf-part/a shiny silver robotic wolf, futuristic, 8K, masterpiece, award winning/pp_fps20.mp4"> <a href="assets/wolf-part/a shiny silver robotic wolf, futuristic, 8K, masterpiece, award winning/pp_fps20.mp4"> <video  width="300" src="assets/wolf-part/a shiny silver robotic wolf, futuristic, 8K, masterpiece, award winning/pp_fps20.mp4" autoplay loop controls muted/> </a> </a></th>
-      <th><a href="assets/wolf-part/a colorful polygonal illustration of a wolf/pp_fps20.mp4"> <a href="assets/wolf-part/a colorful polygonal illustration of a wolf/pp_fps20.mp4" ></a><video  width="300" src="assets/wolf-part/a colorful polygonal illustration of a wolf/pp_fps20.mp4" autoplay loop controls muted/> </a> </a></th>
-      <th><a href="assets/wolf-part/a photo of a fluffy wolf doll/pp_fps20.mp4"> <a href="assets/wolf-part/a photo of a fluffy wolf doll/pp_fps20.mp4" ></a><video  width="300" src="assets/wolf-part/a photo of a fluffy wolf doll/pp_fps20.mp4" autoplay loop controls muted/> </a> </a></th>
-  </tr>
-  <tr>
-    <th style="font-size: 16px">Input video</th>
-    <th style="font-family: Chalkduster">"a pixar animation of a woman running"</th>
-</tr>
-<tr>
-    <th><a href="assets/woman-running/input_fps30.mp4"> <a href="assets/woman-running/input_fps30.mp4"> <video  width="300" src="assets/woman-running/input_fps30.mp4" autoplay loop controls muted /> </a> </a></th>
-    <th><a href="assets/woman-running/a pixar animation of a woman running, beautiful eyes/pp_fps_30.mp4"> <a href="assets/woman-running/a pixar animation of a woman running, beautiful eyes/pp_fps_30.mp4"> <video  width="300" src="assets/woman-running/a pixar animation of a woman running, beautiful eyes/pp_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
-</tr>
-                <tr> <td><br /></td> </tr> -->
-		</tbody>
-	</table>
-    <!------------------ END SECTION ------------------>
-
-
-    <!------------------ BEGIN SECTION ------------------>
-
-    <p>&nbsp;</p>
-    <hr>
-    
-    <h2 id="our_results_others_container" align="left"><a name="image-results" id="image-results"></a>Our Results combined with other image editing techniques</h2>
-  
-  
-    <p align="left">
-      We present sample results of our method on top of SDEdit (<a href="#ref-SDEdit">[7]</a>).
-      <!-- Since accurate structure preservation is essential to our method, we use the noise obtained from DDIM inversion to noise the frames to a large time-step. -->
-    </p>
-    
-    <table  width="900" align="center">
-      <tbody>
-        <tr>
-          <th style="font-family: Chalkduster">"a shiny silver robot"</th>
-          <th style="font-size: 16px">Per-frame SDEdit <a href="#ref-SDEdit">[6]</a></th>
-          <th style="font-size: 16px">TokenFlow + SDEdit <a href="#ref-SDEdit">[6]</a></th>
-      </tr>
-        <tr>
-          <th><a href="assets/wolf-part/input_fps20.mp4"> <a href="assets/wolf-part/input_fps20.mp4"> <video  width="224" src="assets/wolf-part/input_fps20.mp4" autoplay loop controls muted /> </a> </a></th>
-          <th><a href="assets/wolf-part/a shiny silver robotic wolf, futuristic, 8K, masterpiece, award winning/vanilla_sde_fps20.mp4"> <a href="assets/wolf-part/a shiny silver robotic wolf, futuristic, 8K, masterpiece, award winning/vanilla_sde_fps20.mp4"> <video  width="224" src="assets/wolf-part/a shiny silver robotic wolf, futuristic, 8K, masterpiece, award winning/vanilla_sde_fps20.mp4" autoplay loop controls muted/> </a> </a></th>
-          <th><a href="assets/wolf-part/a shiny silver robotic wolf, futuristic, 8K, masterpiece, award winning/sde_result_fps20.mp4"> <a href="assets/wolf-part/a shiny silver robotic wolf, futuristic, 8K, masterpiece, award winning/sde_result_fps20.mp4"> <video  width="224" src="assets/wolf-part/a shiny silver robotic wolf, futuristic, 8K, masterpiece, award winning/sde_result_fps20.mp4" autoplay loop controls muted/> </a> </a></th>
-      </tr>
-      <tr>
-        <th style="font-family: Chalkduster">"an ice sculpture"</th>
-        <th style="font-size: 16px"></th>
-        <th style="font-size: 16px"></th>
-    </tr>
-      <tr>
-        <th><a href="assets/bread/input_fps20.mp4"> <a href="assets/bread/input_fps20.mp4"> <video  width="224" src="assets/bread/input_fps20.mp4" autoplay loop controls muted /> </a> </a></th>
-        <th><a href="assets/bread/an ice sculpture/vanilla_sde_fps20.mp4"> <a href="assets/bread/an ice sculpture/vanilla_sde_fps20.mp4"> <video  width="224" src="assets/bread/an ice sculpture/vanilla_sde_fps20.mp4" autoplay loop controls muted/> </a> </a></th>
-        <th><a href="assets/bread/an ice sculpture/sde_result_fps_20.mp4"> <a href="assets/bread/an ice sculpture/sde_result_fps_20.mp4"> <video  width="224" src="assets/bread/an ice sculpture/sde_result_fps_20.mp4" autoplay loop controls muted/> </a> </a></th>
-      </tr>
-                  <tr> <td><br /></td> </tr> 
-      </tbody>
-    </table>
-
-    <p >
-      We present sample results of our method on top of ControlNet image synthesis (<a href="#ref-controlnet">[9]</a>).
-      <!-- Since accurate structure preservation is essential to our method, we use the noise obtained from DDIM inversion to noise the frames to a large time-step. -->
-    </p>
-    
-    <table  width="900" align="center">
-      <tbody>
-        <tr>
-          <th style="font-family: Chalkduster">"a colorful oil painting of a wolf"</th>
-          <th style="font-size: 16px">Per-frame ControlNet <a href="#ref-ControlNet">[6]</a></th>
-          <th style="font-size: 16px">TokenFlow + ControlNet <a href="#ref-ControlNet">[6]</a></th>
-      </tr>
-        <tr>
-          <th><a href="assets/wolf-part/oil_painting/input_fps20.mp4"> <a href="assets/wolf-part/oil_painting/input_fps20.mp4"> <video  width="224" src="assets/wolf-part/oil_painting/input_fps20.mp4" autoplay loop controls muted /> </a> </a></th>
-          <th><a href="assets/wolf-part/oil_painting/perframe_controlnet_fps_20.mp4"> <a href="assets/wolf-part/oil_painting/perframe_controlnet_fps_20.mp4"> <video  width="224" src="assets/wolf-part/oil_painting/perframe_controlnet_fps_20.mp4" autoplay loop controls muted/> </a> </a></th>
-          <th><a href="assets/wolf-part/oil_painting/tokenflow_controlnet_fps_20.mp4"> <a href="assets/wolf-part/oil_painting/tokenflow_controlnet_fps_20.mp4"> <video  width="224" src="assets/wolf-part/oil_painting/tokenflow_controlnet_fps_20.mp4" autoplay loop controls muted/> </a> </a></th>
-      </tr>
-      <tr>
-        <th style="font-family: Chalkduster">"an anime of a man in a field"</th>
-        <th style="font-size: 16px"></th>
-        <th style="font-size: 16px"></th>
-    </tr>
-      <tr>
-        <th><a href="assets/man-dance/input_fps20.mp4"> <a href="assets/man-dance/input_fps20.mp4"> <video  width="224" src="assets/man-dance/input_fps20.mp4" autoplay loop controls muted /> </a> </a></th>
-        <th><a href="assets/man-dance/perframe_controlnet_fps_20.mp4"> <a href="assets/man-dance/perframe_controlnet_fps_20.mp4"> <video  width="224" src="assets/man-dance/perframe_controlnet_fps_20.mp4" autoplay loop controls muted/> </a> </a></th>
-        <th><a href="assets/man-dance/tokenflow_controlnet_fps_20.mp4"> <a href="assets/man-dance/tokenflow_controlnet_fps_20.mp4"> <video  width="224" src="assets/man-dance/tokenflow_controlnet_fps_20.mp4" autoplay loop controls muted/> </a> </a></th>
-      </tr>
-                  <tr> <td><br /></td> </tr> 
-      </tbody>
-    </table>
-        
-      <!------------------ END SECTION ------------------>
-  
     
   <!------------------ BEGIN SECTION ------------------>
   <p>&nbsp;</p>
@@ -285,11 +162,11 @@
         <li>Text-to-video-zero (<a href="#ref-txt2vid">[1]</a>) .</li> 
         <li>Tune-a-video (<a href="#ref-TAV">[2]</a>).</li> 
         <li>Gen1 (<a href="#ref-gen1">[3]</a>).</li> 
-        <li>Plug-and-Play per frame (<a href="#ref-pnp">[4]</a>).</li> 
-        <li>Fate-Zero (<a href="#ref-fatezero">[8]</a>)</li>
+        <li>Video-P2P (<a href="#ref-pnp">[4]</a>).</li> 
+        <li>TokenFlow (<a href="#ref-fatezero">[8]</a>)</li>
         <li>Rerender-a-Video (<a href="#ref-rerender">[10]</a>)</li>
 </ul>
-    Our msthod manages to preserve the structure of the guidance image while fulfilling the target text. </p>
+    Our method manages to preserve the video consistency after translation while fulfilling the target text. </p>
 
   <table  width="800" align="center">
         <!-- <th>A</th>
@@ -303,7 +180,7 @@
           </tr> -->
       <tr>
         <tr>
-            <th style="font-family: Chalkduster">"rainbow textured dog"</th>
+            <th style="font-family: Chalkduster">"Van Gogh Starry Night style, a bear"</th>
             <th style="font-size: 16px">Ours</th>
             <th style="font-size: 16px">Text-to-video (<a href="#ref-txt2vid">[1]</a>)</th>
             <th style="font-size: 16px">TAV (<a href="#ref-TAV">[2]</a>)</th>
@@ -311,22 +188,22 @@
 
 
         <tr>
-            <th><a href="assets/poodle/input_fps30.mp4"> <a href="assets/poodle/input_fps30.mp4"> <video  width="224" src="assets/poodle/input_fps30.mp4" autoplay loop controls muted/> </a> </a></th>
-            <th><a href="assets/poodle/a dog with a rainbow texture/result_fps_30.mp4"> <a href="assets/poodle/a dog with a rainbow texture/result_fps_30.mp4"> <video  width="224" src="assets/poodle/a dog with a rainbow texture/result_fps_30.mp4" autoplay loop controls muted /> </a> </a></th>
-            <th><a href="assets/poodle/a dog with a rainbow texture/txt2vid_fps30.mp4"> <a href="assets/poodle/a dog with a rainbow texture/txt2vid_fps30.mp4"> <video  width="224" src="assets/poodle/a dog with a rainbow texture/txt2vid_fps30.mp4" autoplay loop controls muted/> </a> </a></th>
-            <th><a href="assets/poodle/a dog with a rainbow texture/tav_fps30.mp4"> <a href="assets/poodle/a dog with a rainbow texture/tav_fps30.mp4"> <video  width="224" src="assets/poodle/a dog with a rainbow texture/tav_fps30.mp4" autoplay loop controls muted/> </a> </a></th>
+            <th><a href="assets/bear.mp4"> <a href="assets/bear.mp4"> <video  width="224" src="assets/bear.mp4" autoplay loop controls muted/> </a> </a></th>
+            <th><a href="assets/bear_vangoh_60.mp4"> <a href="assets/bear_vangoh_60.mp4"> <video  width="224" src="assets/bear_vangoh_60.mp4" autoplay loop controls muted /> </a> </a></th>
+            <th><a href="assets/comparison/bear-t2v.mp4"> <video  width="224" src="assets/comparison/bear-t2v.mp4" autoplay loop controls muted/> </a> </a></th>
+            <th><a href="assets/comparison/bear-TAV.mp4"> <a href="assets/comparison/bear-TAV.mp4"> <video  width="224" src="assets/comparison/bear-TAV.mp4" autoplay loop controls muted/> </a> </a></th>
           </tr>
           <tr>
             <th style="font-size: 16px">Gen1 (<a href="#ref-gen1">[3]</a>)</th>
-            <th style="font-size: 16px">PnP per frame (<a href="#ref-pnp">[4]</a>)</th>
-            <th style="font-size: 16px">Fate-Zero (<a href="#ref-fatezero">[8]</a>)</th>
+            <th style="font-size: 16px">Video-P2P (<a href="#ref-pnp">[4]</a>)</th>
+            <th style="font-size: 16px">TokenFlow (<a href="#ref-fatezero">[8]</a>)</th>
             <th style="font-size: 16px">Re-render a Video (<a href="#ref-rerender">[10]</a>)</th>
         </tr>
           <tr>
-            <th><a href="assets/poodle/a dog with a rainbow texture/gen1_fps30.mp4"> <a href="assets/poodle/a dog with a rainbow texture/gen1_fps30.mp4"> <video  width="224" src="assets/poodle/a dog with a rainbow texture/gen1_fps30.mp4" autoplay loop controls muted/> </a> </a></th>
-            <th><a href="assets/poodle/a dog with a rainbow texture/pnp_per_frame_baseline_fps_30.mp4"> <a href="assets/poodle/a dog with a rainbow texture/pnp_per_frame_baseline_fps_30.mp4"> <video  width="224" src="assets/poodle/a dog with a rainbow texture/pnp_per_frame_baseline_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
-            <th><a href="assets/poodle/a dog with a rainbow texture/fatezero_30_fps.mp4"> <a href="assets/poodle/a dog with a rainbow texture/fatezero_30_fps.mp4"> <video  width="224" src="assets/poodle/a dog with a rainbow texture/fatezero_30_fps.mp4" autoplay loop controls muted/> </a> </a></th>
-            <th><a href="assets/poodle/a dog with a rainbow texture/rerender_fps_30.mp4"> <a href="assets/poodle/a dog with a rainbow texture/rerender_fps_30.mp4"> <video  width="224" src="assets/poodle/a dog with a rainbow texture/rerender_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
+            <th><a href="assets/comparison/bear-Gen-1,text_prompt Van Gogh Starry Nigh,style_consistency 2,style_weight 85,seed 36931641,frame_consistency 1,upscale false,foreground_only false,background_only false.mp4"> <a href="assets/comparison/bear-Gen-1,text_prompt Van Gogh Starry Nigh,style_consistency 2,style_weight 85,seed 36931641,frame_consistency 1,upscale false,foreground_only false,background_only false.mp4"> <video  width="224" src="assets/comparison/bear-Gen-1,text_prompt Van Gogh Starry Nigh,style_consistency 2,style_weight 85,seed 36931641,frame_consistency 1,upscale false,foreground_only false,background_only false.mp4" autoplay loop controls muted/> </a> </a></th>
+            <th><a href="assets/comparison/bear-VidP2P.mp4"> <a href="assets/comparison/bear-VidP2P.mp4"> <video  width="224" src="assets/comparison/bear-VidP2P.mp4" autoplay loop controls muted/> </a> </a></th>
+            <th><a href="assets/comparison/bear-tokenflow.mp4"> <a href="assets/comparison/bear-tokenflow.mp4"> <video  width="224" src="assets/comparison/bear-tokenflow.mp4" autoplay loop controls muted/> </a> </a></th>
+            <th><a href="assets/comparison/bear-rerender.mp4"> <a href="assets/comparison/bear-rerender.mp4"> <video  width="224" src="assets/comparison/bear-rerender.mp4" autoplay loop controls muted/> </a> </a></th>
         </tr>
       </table>
         <hr>
@@ -334,7 +211,7 @@
         <table  width="800" align="center">
         <tr>
         <tr>
-            <th style="font-family: Chalkduster">"an origami of a stork"</th>
+            <th style="font-family: Chalkduster">"Oil painting style, a dog"</th>
             <th style="font-size: 16px">Ours</th>
             <th style="font-size: 16px">Text-to-video (<a href="#ref-txt2vid">[1]</a>)</th>
             <th style="font-size: 16px">TAV (<a href="#ref-TAV">[2]</a>)</th>
@@ -342,30 +219,30 @@
 
        
         <tr>
-            <th><a href="assets/poodle/input_fps30.mp4"> <a href="assets/stork/input_fps30.mp4"> <video  width="224" src="assets/stork/input_fps30.mp4" autoplay loop controls muted/> </a> </a></th>
-            <th><a href="assets/stork/an origami of a stork/result_fps_30.mp4"> <a href="assets/stork/an origami of a stork/result_fps_30.mp4"> <video  width="224" src="assets/stork/an origami of a stork/result_fps_30.mp4" autoplay loop controls muted /> </a> </a></th>
-            <th><a href="assets/stork/an origami of a stork/txt2vid_fps30.mp4"> <a href="assets/stork/an origami of a stork/txt2vid_fps30.mp4"> <video  width="224" src="assets/stork/an origami of a stork/txt2vid_fps30.mp4" autoplay loop controls muted/> </a> </a></th>
-            <th><a href="assets/stork/an origami of a stork/tav_fps30.mp4"> <a href="assets/stork/an origami of a stork/tav_fps30.mp4"> <video  width="224" src="assets/stork/an origami of a stork/tav_fps30.mp4" autoplay loop controls muted/> </a> </a></th>
+            <th><a href="assets/dog-agility.mp4"> <a href="assets/dog-agility.mp4"> <video  width="224" src="assets/dog-agility.mp4" autoplay loop controls muted/> </a> </a></th>
+            <th><a href="assets/comparison/dog-agility_vangoh.mp4"> <a href="assets/comparison/dog-agility_vangoh.mp4"> <video  width="224" src="assets/comparison/dog-agility_vangoh.mp4" autoplay loop controls muted /> </a> </a></th>
+            <th><a href="assets/comparison/dog-agility-text2video-zero.mp4"> <a href="assets/comparison/dog-agility-text2video-zero.mp4"> <video  width="224" src="assets/comparison/dog-agility-text2video-zero.mp4" autoplay loop controls muted/> </a> </a></th>
+            <th><a href="assets/comparison/dog-agility-TAV.mp4"> <a href="assets/comparison/dog-agility-TAV.mp4"> <video  width="224" src="assets/comparison/dog-agility-TAV.mp4" autoplay loop controls muted/> </a> </a></th>
           </tr>
           
           <tr>
             <th style="font-size: 16px">Gen1 (<a href="#ref-gen1">[3]</a>)</th>
-            <th style="font-size: 16px">PnP per frame (<a href="#ref-pnp">[4]</a>)</th>
-            <th style="font-size: 16px">Fate-Zero (<a href="#ref-fatezero">[8]</a>)</th>
+            <th style="font-size: 16px">Video-P2P (<a href="#ref-pnp">[4]</a>)</th>
+            <th style="font-size: 16px">TokenFlow (<a href="#ref-fatezero">[8]</a>)</th>
             <th style="font-size: 16px">Re-render a Video (<a href="#ref-rerender">[10]</a>)</th>
         </tr>
           <tr>
-            <th><a href="assets/stork/an origami of a stork/gen1_fps30.mp4"> <a href="assets/stork/an origami of a stork/gen1_fps30.mp4"> <video  width="224" src="assets/stork/an origami of a stork/gen1_fps30.mp4" autoplay loop controls muted/> </a> </a></th>
+            <th><a href="assets/comparison/dog-agility-Gen-1 dog-agility,text_prompt Van Gogh oil paintin,style_consistency 2,style_weight 85,seed 761354211,frame_consistency 1,upscale false,foreground_only false,background_only false.mp4"> <a href="assets/comparison/dog-agility-Gen-1 dog-agility,text_prompt Van Gogh oil paintin,style_consistency 2,style_weight 85,seed 761354211,frame_consistency 1,upscale false,foreground_only false,background_only false.mp4"> <video  width="224" src="assets/comparison/dog-agility-Gen-1 dog-agility,text_prompt Van Gogh oil paintin,style_consistency 2,style_weight 85,seed 761354211,frame_consistency 1,upscale false,foreground_only false,background_only false.mp4" autoplay loop controls muted/> </a> </a></th>
             <th><a href="assets/stork/an origami of a stork/pnp_per_frame_baseline_fps_30.mp4"> <a href="assets/stork/an origami of a stork/pnp_per_frame_baseline_fps_30.mp4"> <video  width="224" src="assets/stork/an origami of a stork/pnp_per_frame_baseline_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
-            <th><a href="assets/stork/an origami of a stork/fatezero_30_fps.mp4"> <a href="assets/stork/an origami of a stork/fatezero_30_fps.mp4"> <video  width="224" src="assets/stork/an origami of a stork/fatezero_30_fps.mp4" autoplay loop controls muted/> </a> </a></th>
-            <th><a href="assets/stork/an origami of a stork/rerender_fps_30.mp4"> <a href="assets/stork/an origami of a stork/rerender_fps_30.mp4"> <video  width="224" src="assets/stork/an origami of a stork/rerender_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
+            <th><a href="assets/comparison/dog-agility-tokenflow.mp4"> <a href="assets/comparison/dog-agility-tokenflow.mp4"> <video  width="224" src="assets/comparison/dog-agility-tokenflow.mp4" autoplay loop controls muted/> </a> </a></th>
+            <th><a href="assets/comparison/dog-agility-rerender.mp4"> <a href="assets/comparison/dog-agility-rerender.mp4"> <video  width="224" src="assets/comparison/dog-agility-rerender.mp4" autoplay loop controls muted/> </a> </a></th>
           </tr>
         </table>
           <hr>
         
           <table  width="800" align="center">
         <tr>
-          <th style="font-family: Chalkduster">"a metal sculpture"</th>
+          <th style="font-family: Chalkduster">"A marble sculpture of a woman running"</th>
           <th style="font-size: 16px">Ours</th>
           <th style="font-size: 16px">Text-to-video (<a href="#ref-txt2vid">[1]</a>)</th>
           <th style="font-size: 16px">TAV (<a href="#ref-TAV">[2]</a>)</th>
@@ -373,22 +250,22 @@
 
 
       <tr>
-          <th><a href="assets/bread/input_fps20.mp4"> <a href="assets/bread/input_fps20.mp4"> <video  width="224" src="assets/bread/input_fps20.mp4" autoplay loop controls muted/> </a> </a></th>
-          <th><a href="assets/bread/a shiny metal scultpture/result_fps_20.mp4"> <a href="assets/bread/a shiny metal scultpture/result_fps_20.mp4"> <video  width="224" src="assets/bread/a shiny metal scultpture/result_fps_20.mp4" autoplay loop controls muted /> </a> </a></th>
-          <th><a href="assets/bread/a shiny metal scultpture/txt2vid_fps20.mp4"> <a href="assets/bread/a shiny metal scultpture/txt2vid_fps20.mp4"> <video  width="224" src="assets/bread/a shiny metal scultpture/txt2vid_fps20.mp4" autoplay loop controls muted/> </a> </a></th>
-          <th><a href="assets/bread/a shiny metal scultpture/tav_fps20.mp4"> <a href="assets/bread/a shiny metal scultpture/tav_fps20.mp4"> <video  width="224" src="assets/bread/a shiny metal scultpture/tav_fps20.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/woman-running.mp4"> <a href="assets/woman-running.mp4"> <video  width="224" src="assets/woman-running.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/comparison/woman-running_marble.mp4"> <a href="assets/comparison/woman-running_marble.mp4"> <video  width="224" src="assets/comparison/woman-running_marble.mp4" autoplay loop controls muted /> </a> </a></th>
+          <th><a href="assets/comparison/woman-running-text2videozero.mp4"> <a href="assets/comparison/woman-running-text2videozero.mp4"> <video  width="224" src="assets/comparison/woman-running-text2videozero.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/comparison/woman-running-TAV.mp4"> <a href="assets/comparison/woman-running-TAV.mp4"> <video  width="224" src="assets/comparison/woman-running-TAV.mp4" autoplay loop controls muted/> </a> </a></th>
         </tr>
         <tr>
           <th style="font-size: 16px">Gen1 (<a href="#ref-gen1">[3]</a>)</th>
-          <th style="font-size: 16px">PnP per frame (<a href="#ref-pnp">[4]</a>)</th>
-          <th style="font-size: 16px">Fate-Zero (<a href="#ref-fatezero">[8]</a>)</th>
+          <th style="font-size: 16px">Video-P2P (<a href="#ref-pnp">[4]</a>)</th>
+          <th style="font-size: 16px">TokenFlow (<a href="#ref-fatezero">[8]</a>)</th>
           <th style="font-size: 16px">Re-render a Video (<a href="#ref-rerender">[10]</a>)</th>
       </tr>
         <tr>
-          <th><a href="assets/bread/a shiny metal scultpture/gen1_fps20.mp4"> <a href="assets/bread/a shiny metal scultpture/gen1_fps20.mp4"> <video  width="224" src="assets/bread/a shiny metal scultpture/gen1_fps20.mp4" autoplay loop controls muted/> </a> </a></th>
-          <th><a href="assets/bread/a shiny metal scultpture/pnp_per_frame_baseline_fps_20.mp4"> <a href="assets/bread/a shiny metal scultpture/pnp_per_frame_baseline_fps_20.mp4"> <video  width="224" src="assets/bread/a shiny metal scultpture/pnp_per_frame_baseline_fps_20.mp4" autoplay loop controls muted/> </a> </a></th>
-          <th><a href="assets/bread/a shiny metal scultpture/fatezero_20_fps.mp4"> <a href="assets/bread/a shiny metal scultpture/fatezero_20_fps.mp4"> <video  width="224" src="assets/bread/a shiny metal scultpture/fatezero_20_fps.mp4" autoplay loop controls muted/> </a> </a></th>
-          <th><a href="assets/bread/a shiny metal scultpture/rerender_fps_20.mp4"> <a href="assets/bread/a shiny metal scultpture/rerender_fps_20.mp4"> <video  width="224" src="assets/bread/a shiny metal scultpture/rerender_fps_20.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/comparison/woman-running-Gen-1,text_prompt a marble sculpture o,style_consistency 2,style_weight 85,seed 2818273295,frame_consistency 1,upscale false,foreground_only false,background_only false.mp4"> <a href="assets/comparison/woman-running-Gen-1,text_prompt a marble sculpture o,style_consistency 2,style_weight 85,seed 2818273295,frame_consistency 1,upscale false,foreground_only false,background_only false.mp4"> <video  width="224" src="assets/comparison/woman-running-Gen-1,text_prompt a marble sculpture o,style_consistency 2,style_weight 85,seed 2818273295,frame_consistency 1,upscale false,foreground_only false,background_only false.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/comparison/woman-running-videop2p.gif"> <a href="assets/comparison/woman-running-videop2p.gif"> <video  width="224" src="assets/comparison/woman-running-videop2p.gif" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/comparison/woman-running-tokenflow_PnP_fps_30.mp4"> <a href="assets/comparison/woman-running-tokenflow_PnP_fps_30.mp4"> <video  width="224" src="assets/comparison/woman-running-tokenflow_PnP_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/comparison/woman-running-rerender.mp4"> <a href="assets/comparison/woman-running-rerender.mp4"> <video  width="224" src="assets/comparison/woman-running-rerender.mp4" autoplay loop controls muted/> </a> </a></th>
         </tr>
       </table>
         <hr>
@@ -424,44 +301,6 @@
 </table>
 <!------------------ END SECTION ------------------>
 
-<!------------------ BEGIN SECTION ------------------>
-  <p>&nbsp;</p>
-  <hr>
-	
-  <h2 id="additional_qual_comp" align="left"><a name="image-results" id="image-results"></a>Additional Qualitative Comparisons</h2>
-  <p align="left">We present additional qualitative comparisons of our method with Text2LIVE (<a href="#ref-t2l">[5]</a>) and Ebsynth (<a href="#ref-ebsynth">[6]</a>).
-    Text2live lacks a strong generative prior, thus has a poor visual quality. Ebsynth performs well on video frames close to the edited keyframe, but either fails to propagate the edit to the rest of the video or introduces artifacts.
-  <br/>
-
-  <table  width="1200" align="center">
-    <tbody>
-        <!-- <th>A</th>
-        <th>B</th>
-        <th>C</th> -->
-        <tr>
-            <th style="font-family: Chalkduster">"a car in s snowy scene"</th>
-            <th style="font-size: 16px">Ours</th>
-            <th style="font-size: 16px">Text2LIVE (<a href="#ref-t2l">[5]</a>)</th>
-            <th style="font-size: 16px">Ebsynth (<a href="#ref-ebsynth">[6]</a>)</th>
-
-        </tr>
-        <tr>
-            <th><a href="assets/Qual/car-turn/input_fps20.mp4"> <a href="assets/Qual/car-turn/input_fps20.mp4"> <video  width="300" src="assets/Qual/car-turn/input_fps20.mp4" autoplay loop controls muted/> </a> </a></th>
-            <th><a href="assets/Qual/car-turn/result_fps20.mp4"> <a href="assets/Qual/car-turn/result_fps20.mp4"> <video  width="300" src="assets/Qual/car-turn/result_fps20.mp4" autoplay loop controls muted/> </a> </a></th>
-            <th><a href="assets/Qual/car-turn/txt2live.mp4"> <a href="assets/Qual/car-turn/txt2live.mp4"> <video  width="300" src="assets/Qual/car-turn/txt2live.mp4" autoplay loop controls muted/> </a> </a></th>
-            <th><a href="assets/Qual/car-turn/ebsynth.mp4"> <a href="assets/Qual/car-turn/ebsynth.mp4"> <video  width="300" src="assets/Qual/car-turn/ebsynth.mp4" autoplay loop controls muted/> </a> </a></th>
-        </tr>
-        <tr>
-          <th><a href="assets/Qual/blackswan/input_fps20.mp4"> <a href="assets/Qual/blackswan/input_fps20.mp4"> <video  width="300" src="assets/Qual/blackswan/input_fps20.mp4" autoplay loop controls muted/> </a> </a></th>
-          <th><a href="assets/Qual/blackswan/result_fps_20.mp4"> <a href="assets/Qual/blackswan/result_fps_20.mp4"> <video  width="300" src="assets/Qual/blackswan/result_fps_20.mp4" autoplay loop controls muted/> </a> </a></th>
-          <th><a href="assets/Qual/blackswan/txt2live.mp4"> <a href="assets/Qual/blackswan/txt2live.mp4"> <video  width="300" src="assets/Qual/blackswan/txt2live.mp4" autoplay loop controls muted/> </a> </a></th>
-          <th><a href="assets/Qual/blackswan/ebsynth.mp4"> <a href="assets/Qual/blackswan/ebsynth.mp4"> <video  width="300" src="assets/Qual/blackswan/ebsynth.mp4" autoplay loop controls muted/> </a> </a></th>
-      </tr>
-        <tr> <td><br /></td> </tr>
-
-    </tbody>
-</table>
-<!------------------ END SECTION ------------------>
 
 <!------------------ BEGIN SECTION ------------------>
 <p>&nbsp;</p>
@@ -512,57 +351,6 @@
 </table>
 <!------------------ END SECTION ------------------>	
 
-<!------------------ BEGIN SECTION ------------------>
-<p>&nbsp;</p>
-<hr>
-  
-<h2 id="pca" align="left"><a name="image-results" id="image-results"></a>PCA visualisations</h2>
-<p align="left">We present the feature PCA visualisation of the original video featuers, of the features of a video edited by (<a href="#ref-pnp">[5]</a>), and of the features of frames edited by our method.
-  Different rows show features from different layers of the Unet decoder.
-</p>
-<br/>
-
-<table  width="1200" align="center">
-  <tbody>
-    <tr>
-      <th style="font-size: 16px">original video</th>
-      <th style="font-size: 16px">Ours</th>
-      <th style="font-size: 16px">Per frame editing </th>
-  
-  </tr>
-  <tr>
-      <th><a href="assets/man_basket/input_fps30.mp4"> <a href="assets/man_basket/input_fps30.mp4"> <video  width="300" src="assets/man_basket/input_fps30.mp4" autoplay loop controls muted/> </a> </a></th>
-      <th><a href="assets/man_basket/the milky way, a star wars clone trooper spinning the moon on his finger, planet earth, in the backgound/result_fps_30.mp4"> <a href="assets/man_basket/the milky way, a star wars clone trooper spinning the moon on his finger, planet earth, in the backgound/result_fps_30.mp4"> <video  width="300" src="assets/man_basket/the milky way, a star wars clone trooper spinning the moon on his finger, planet earth, in the backgound/result_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
-      <th><a href="assets/man_basket/the milky way, a star wars clone trooper spinning the moon on his finger, planet earth, in the backgound/pnp_per_frame_baseline_fps_30.mp4"> <a href="assets/man_basket/the milky way, a star wars clone trooper spinning the moon on his finger, planet earth, in the backgound/pnp_per_frame_baseline_fps_30.mp4"> <video  width="300" src="assets/man_basket/the milky way, a star wars clone trooper spinning the moon on his finger, planet earth, in the backgound/pnp_per_frame_baseline_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
-  </tr>
-    <tr>
-      <th style="font-size: 16px"></th>
-      <th style="font-size: 16px"></th>
-      <th style="font-size: 16px"></th>
-
-  </tr>
-  <tr>
-      <th><a href="pca/man_basket/64/tokens_origvideo_30.mp4"> <a href="pca/man_basket/64/tokens_origvideo_30.mp4"> <video  width="300" src="pca/man_basket/64/tokens_origvideo_30.mp4" autoplay loop controls muted/> </a> </a></th>
-      <th><a href="pca/man_basket/64/tokens_flowvideo_30.mp4"> <a href="pca/man_basket/64/tokens_flowvideo_30.mp4"> <video  width="300" src="pca/man_basket/64/tokens_flowvideo_30.mp4" autoplay loop controls muted/> </a> </a></th>
-      <th><a href="pca/man_basket/64/tokens_pnpvideo_30.mp4"> <a href="pca/man_basket/64/tokens_pnpvideo_30.mp4"> <video  width="300" src="pca/man_basket/64/tokens_pnpvideo_30.mp4" autoplay loop controls muted/> </a> </a></th>
-  </tr>
-  <tr>
-    <th><a href="pca/man_basket/32/tokens_origvideo_30.mp4"> <a href="pca/man_basket/32/tokens_origvideo_30.mp4"> <video  width="300" src="pca/man_basket/32/tokens_origvideo_30.mp4" autoplay loop controls muted/> </a> </a></th>
-    <th><a href="pca/man_basket/32/tokens_flowvideo_30.mp4"> <a href="pca/man_basket/32/tokens_flowvideo_30.mp4"> <video  width="300" src="pca/man_basket/32/tokens_flowvideo_30.mp4" autoplay loop controls muted/> </a> </a></th>
-    <th><a href="pca/man_basket/32/tokens_pnpvideo_30.mp4"> <a href="pca/man_basket/32/tokens_pnpvideo_30.mp4"> <video  width="300" src="pca/man_basket/32/tokens_pnpvideo_30.mp4" autoplay loop controls muted/> </a> </a></th>
-</tr>
-<tr>
-  <th><a href="pca/man_basket/16/tokens_origvideo_30.mp4"> <a href="pca/man_basket/16/tokens_origvideo_30.mp4"> <video  width="300" src="pca/man_basket/16/tokens_origvideo_30.mp4" autoplay loop controls muted/> </a> </a></th>
-  <th><a href="pca/man_basket/16/tokens_flowvideo_30.mp4"> <a href="pca/man_basket/16/tokens_flowvideo_30.mp4"> <video  width="300" src="pca/man_basket/16/tokens_flowvideo_30.mp4" autoplay loop controls muted/> </a> </a></th>
-  <th><a href="pca/man_basket/16/tokens_pnpvideo_30.mp4"> <a href="pca/man_basket/16/tokens_pnpvideo_30.mp4"> <video  width="300" src="pca/man_basket/16/tokens_pnpvideo_30.mp4" autoplay loop controls muted/> </a> </a></th>
-</tr>
-
-      <tr> <td><br /></td> </tr>
-
-  </tbody>
-</table>
-<!------------------ END SECTION ------------------>	
-	
   <p><br>
   </p>
   <p>&nbsp;</p>
