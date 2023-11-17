@@ -233,7 +233,7 @@
         </tr>
           <tr>
             <th><a href="assets/comparison/dog-agility-Gen-1 dog-agility,text_prompt Van Gogh oil paintin,style_consistency 2,style_weight 85,seed 761354211,frame_consistency 1,upscale false,foreground_only false,background_only false.mp4"> <a href="assets/comparison/dog-agility-Gen-1 dog-agility,text_prompt Van Gogh oil paintin,style_consistency 2,style_weight 85,seed 761354211,frame_consistency 1,upscale false,foreground_only false,background_only false.mp4"> <video  width="224" src="assets/comparison/dog-agility-Gen-1 dog-agility,text_prompt Van Gogh oil paintin,style_consistency 2,style_weight 85,seed 761354211,frame_consistency 1,upscale false,foreground_only false,background_only false.mp4" autoplay loop controls muted/> </a> </a></th>
-            <th><a href="assets/stork/an origami of a stork/pnp_per_frame_baseline_fps_30.mp4"> <a href="assets/stork/an origami of a stork/pnp_per_frame_baseline_fps_30.mp4"> <video  width="224" src="assets/stork/an origami of a stork/pnp_per_frame_baseline_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
+            <th><a href="assets/comparison/dog-agility-VidP2P.mp4"> <a href="assets/comparison/dog-agility-VidP2P.mp4"> <video  width="224" src="assets/comparison/dog-agility-VidP2P.mp4" autoplay loop controls muted/> </a> </a></th>
             <th><a href="assets/comparison/dog-agility-tokenflow.mp4"> <a href="assets/comparison/dog-agility-tokenflow.mp4"> <video  width="224" src="assets/comparison/dog-agility-tokenflow.mp4" autoplay loop controls muted/> </a> </a></th>
             <th><a href="assets/comparison/dog-agility-rerender.mp4"> <a href="assets/comparison/dog-agility-rerender.mp4"> <video  width="224" src="assets/comparison/dog-agility-rerender.mp4" autoplay loop controls muted/> </a> </a></th>
           </tr>
@@ -263,7 +263,7 @@
       </tr>
         <tr>
           <th><a href="assets/comparison/woman-running-Gen-1,text_prompt a marble sculpture o,style_consistency 2,style_weight 85,seed 2818273295,frame_consistency 1,upscale false,foreground_only false,background_only false.mp4"> <a href="assets/comparison/woman-running-Gen-1,text_prompt a marble sculpture o,style_consistency 2,style_weight 85,seed 2818273295,frame_consistency 1,upscale false,foreground_only false,background_only false.mp4"> <video  width="224" src="assets/comparison/woman-running-Gen-1,text_prompt a marble sculpture o,style_consistency 2,style_weight 85,seed 2818273295,frame_consistency 1,upscale false,foreground_only false,background_only false.mp4" autoplay loop controls muted/> </a> </a></th>
-          <th><a href="assets/comparison/woman-running-videop2p.gif"> <a href="assets/comparison/woman-running-videop2p.gif"> <video  width="224" src="assets/comparison/woman-running-videop2p.gif" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/comparison/woman-running-VidP2P.mp4"> <a href="assets/comparison/woman-running-VidP2P.mp4"> <video  width="224" src="assets/comparison/woman-running-VidP2P.mp4" autoplay loop controls muted/> </a> </a></th>
           <th><a href="assets/comparison/woman-running-tokenflow_PnP_fps_30.mp4"> <a href="assets/comparison/woman-running-tokenflow_PnP_fps_30.mp4"> <video  width="224" src="assets/comparison/woman-running-tokenflow_PnP_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
           <th><a href="assets/comparison/woman-running-rerender.mp4"> <a href="assets/comparison/woman-running-rerender.mp4"> <video  width="224" src="assets/comparison/woman-running-rerender.mp4" autoplay loop controls muted/> </a> </a></th>
         </tr>
@@ -307,7 +307,37 @@
 <hr>
   
 <h2 id="Ablations" align="left"><a name="image-results" id="image-results"></a>Ablations</h2>
-<p align="left"> Ablation results with different hyperparameters, &alpha; and threshold, and optical flow Optical flow extraction networks.
+
+<p align="left"> Ablation studies on the effect of latent alignment, which constrains the query tokens, and cross-frame attention, which constraines the key and value tokens.
+</p>
+<br/>
+
+<table  width="1200" align="center">
+  <tbody>
+      <!-- <th>A</th>
+      <th>B</th>
+      <th>C</th> -->
+      <tr>
+          <th style="font-size: 16px">Original video</th>
+          <th style="font-size: 16px">Ours w/o cross-frame attention</th>
+          <th style="font-size: 16px">Ours w/o latent alignment</th>
+          <th style="font-size: 16px">Ours</th>
+      </tr>
+      <tr>
+          <th><a href="assets/bear.mp4"> <a href="assets/bear.mp4"> <video  width="300" src="assets/bear.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/ablation/effect of cross_frame_attn/wo_cross_frame_attn.mp4"> <a href="assets/ablation/effect of cross_frame_attn/wo_cross_frame_attn.mp4"> <video  width="300" src="assets/ablation/effect of cross_frame_attn/wo_cross_frame_attn.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/ablation/effect of cross_frame_attn/wo_latent_alignment.mp4"> <a href="assets/ablation/effect of cross_frame_attn/wo_latent_alignment.mp4"> <video  width="300" src="assets/ablation/effect of cross_frame_attn/wo_latent_alignment.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/ablation/effect of cross_frame_attn/ours.mp4"> <a href="assets/ablation/effect of cross_frame_attn/ours.mp4"> <video  width="300" src="assets/ablation/effect of cross_frame_attn/ours.mp4" autoplay loop controls muted/> </a> </a></th>
+          
+        </tr>
+
+      <tr> <td><br /></td> </tr>
+
+  </tbody>
+</table>
+
+
+<p align="left"> Ablation results with different hyperparameters, &alpha; and threshold, and optical flow extraction networks.
 </p>
 <br/>
 
@@ -355,34 +385,6 @@
           <th><a href="assets/ablation/different flow extractor/gmflow.mp4"> <a href="assets/"> <video  width="300" src="assets/ablation/different flow extractor/gmflow.mp4" autoplay loop controls muted/> </a> </a></th>
           <th><a href="assets/bear_vangoh_60.mp4"> <a href="assets/bear_vangoh_60.mp4"> <video  width="300" src="assets/ablation/effect of cross_frame_attn/wo_latent_alignment.mp4" autoplay loop controls muted/> </a> </a></th>
           <!-- <th><a href="assets/ablation/hyper-param/threshold/thr0.7.mp4"> <a href="assets/ablation/hyper-param/threshold/thr0.7.mp4"> <video  width="300" src="assets/ablation/hyper-param/threshold/thr0.7.mp4" autoplay loop controls muted/> </a> </a></th> -->
-          
-        </tr>
-
-      <tr> <td><br /></td> </tr>
-
-  </tbody>
-</table>
-
-<p align="left"> Ablation studies on the effect of latent alignment, which constrains the query tokens, and cross-frame attention, which constraines the key and value tokens.
-</p>
-<br/>
-
-<table  width="1200" align="center">
-  <tbody>
-      <!-- <th>A</th>
-      <th>B</th>
-      <th>C</th> -->
-      <tr>
-          <th style="font-size: 16px">Original video</th>
-          <th style="font-size: 16px">Ours w/o cross-frame attention</th>
-          <th style="font-size: 16px">Ours w/o latent alignment</th>
-          <th style="font-size: 16px">Ours</th>
-      </tr>
-      <tr>
-          <th><a href="assets/bear.mp4"> <a href="assets/bear.mp4"> <video  width="300" src="assets/bear.mp4" autoplay loop controls muted/> </a> </a></th>
-          <th><a href="assets/ablation/effect of cross_frame_attn/wo_cross_frame_attn.mp4"> <a href="assets/ablation/effect of cross_frame_attn/wo_cross_frame_attn.mp4"> <video  width="300" src="assets/ablation/effect of cross_frame_attn/wo_cross_frame_attn.mp4" autoplay loop controls muted/> </a> </a></th>
-          <th><a href="assets/ablation/effect of cross_frame_attn/wo_latent_alignment.mp4"> <a href="assets/ablation/effect of cross_frame_attn/wo_latent_alignment.mp4"> <video  width="300" src="assets/ablation/effect of cross_frame_attn/wo_latent_alignment.mp4" autoplay loop controls muted/> </a> </a></th>
-          <th><a href="assets/ablation/effect of cross_frame_attn/ours.mp4"> <a href="assets/ablation/effect of cross_frame_attn/ours.mp4"> <video  width="300" src="assets/ablation/effect of cross_frame_attn/ours.mp4" autoplay loop controls muted/> </a> </a></th>
           
         </tr>
 
