@@ -79,14 +79,14 @@
               </tr>
                 <tr>
                     <th style="font-size: 16px">Input video</th>
-                    <th style="font-family: Chalkduster">"A bus"</th>
+                    <!-- <th style="font-family: Chalkduster">"A bus"</th> -->
                     <th style="font-family: Chalkduster">"Van-Gogh style, a bus"</th>
                     <th style="font-family: Chalkduster">"A bus on the road, snowy day"</th>
                 </tr>
                 <tr>
                   <th><a href="assets/bus.mp4"> <a href="assets/bus.mp4"> <video  width="300" src="assets/bus.mp4" autoplay loop controls muted /> </a> </a></th>
                   <th><a href="assets/bus_vangoh(Ours).mp4"> <a href="assets/bus_vangoh(Ours).mp4"> <video  width="300" src="assets/bus_vangoh(Ours).mp4" autoplay loop controls muted/> </a> </a></th>
-                  <th><a href="assets/bus_snowy(Ours)"> <a href="assets/bus_snowy(Ours)"> <video  width="300" src="assets/bus_snowy(Ours)" autoplay loop controls muted/> </a></th>
+                  <th><a href="assets/bus_snowy(Ours).mp4"> <a href="assets/bus_snowy(Ours).mp4"> <video  width="300" src="assets/bus_snowy(Ours).mp4" autoplay loop controls muted/> </a></th>
                   <!-- <th><a href="assets/eagle_face/an origami of an eagle, pink paper art, pink, japanses, washi patterns/result_fps_30.mp4"> <a href="assets/eagle_face/an origami of an eagle, pink paper art, pink, japanses, washi patterns/result_fps_30.mp4"> <video  width="300" src="assets/eagle_face/an origami of an eagle, pink paper art, pink, japanses, washi patterns/result_fps_30.mp4" autoplay loop controls muted/> </a> </a></th> -->
               </tr>
               <tr>
@@ -307,7 +307,7 @@
 <hr>
   
 <h2 id="Ablations" align="left"><a name="image-results" id="image-results"></a>Ablations</h2>
-<p align="left"> We ablate tokenflow propagation and keyframe randomization .
+<p align="left"> Ablation results with different hyperparameters, &alpha; and threshold, and optical flow Optical flow extraction networks.
 </p>
 <br/>
 
@@ -317,31 +317,44 @@
       <th>B</th>
       <th>C</th> -->
       <tr>
-          <th style="font-family: Chalkduster">"a colorful polygonal illustration"</th>
-          <th style="font-size: 16px">Ours</th>
-          <th style="font-size: 16px">Ours, constant keyframes </th>
-          <th style="font-size: 16px">Extended attention, random keyframes </th>
-
+          <th style="font-size: 16px">&alpha; ranges from 4 to 6. </th>
+          <th style="font-size: 16px">&alpha;=4</th>
+          <th style="font-size: 16px">&alpha;=5(Ours) </th>
+          <th style="font-size: 16px">&alpha;=6</th>
       </tr>
       <tr>
-          <th><a href="assets/wolf-part/input_fps10.mp4"> <a href="assets/wolf-part/input_fps10.mp4"> <video  width="300" src="assets/wolf-part/input_fps10.mp4" autoplay loop controls muted/> </a> </a></th>
-          <th><a href="assets/wolf-part/a colorful polygonal illustration of a wolf/result_fps_10.mp4"> <a href="assets/wolf-part/a colorful polygonal illustration of a wolf/result_fps_10.mp4"> <video  width="300" src="assets/wolf-part/a colorful polygonal illustration of a wolf/result_fps_10.mp4" autoplay loop controls muted/> </a> </a></th>
-          <th><a href="assets/wolf-part/a colorful polygonal illustration of a wolf/non_random_tokenf_fps_10.mp4"> <a href="assets/wolf-part/a colorful polygonal illustration of a wolf/non_random_tokenf_fps_10.mp4"> <video  width="300" src="assets/wolf-part/a colorful polygonal illustration of a wolf/non_random_tokenf_fps_10.mp4" autoplay loop controls muted/> </a> </a></th>
-          <th><a href="assets/wolf-part/a colorful polygonal illustration of a wolf/extended_attn_random_baseline_fps_10.mp4"> <a href="assets/wolf-part/a colorful polygonal illustration of a wolf/extended_attn_random_baseline_fps_10.mp4"> <video  width="300" src="assets/wolf-part/a colorful polygonal illustration of a wolf/extended_attn_random_baseline_fps_10.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/bear.mp4"> <a href="assets/bear.mp4"> <video  width="300" src="assets/bear.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/ablation/hyper-param/alpha/alpha4.mp4"> <a href="assets/ablation/hyper-param/alpha/alpha4.mp4"> <video  width="300" src="assets/ablation/hyper-param/alpha/alpha4.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/bear_vangoh_60.mp4"> <a href="assets/bear_vangoh_60.mp4"> <video  width="300" src="assets/bear_vangoh_60.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/ablation/hyper-param/alpha/alpha6.mp4"> <a href="assets/ablation/hyper-param/alpha/alpha6.mp4"> <video  width="300" src="assets/ablation/hyper-param/alpha/alpha6.mp4" autoplay loop controls muted/> </a> </a></th>
           
         </tr>
         <tr>
-          <th style="font-family: Chalkduster">"a rainbow textured dog"</th>
-          <th style="font-size: 16px"></th>
-          <th style="font-size: 16px"></th>
-          <th style="font-size: 16px"></th>
+          <th style="font-size: 16px">Threshold ranges from 0.5 to 0.7 .</th>
+          <th style="font-size: 16px">threshold=0.5</th>
+          <th style="font-size: 16px">threshold=0.6(Ours)</th>
+          <th style="font-size: 16px">threshold=0.7</th>
 
       </tr>
       <tr>
-          <th><a href="assets/poodle/input_fps30.mp4"> <a href="assets/poodle/input_fps30.mp4"> <video  width="300" src="assets/poodle/input_fps30.mp4" autoplay loop controls muted/> </a> </a></th>
-          <th><a href="assets/poodle/a dog with a rainbow texture/result_fps_30.mp4"> <a href="assets/poodle/a dog with a rainbow texture/result_fps_30.mp4"> <video  width="300" src="assets/poodle/a dog with a rainbow texture/result_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
-          <th><a href="assets/poodle/a dog with a rainbow texture/non_random_tokenf_fps_30.mp4"> <a href="assets/poodle/a dog with a rainbow texture/non_random_tokenf_fps_30.mp4"> <video  width="300" src="assets/poodle/a dog with a rainbow texture/non_random_tokenf_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
-          <th><a href="assets/poodle/a dog with a rainbow texture/extended_attn_random_baseline_fps_30.mp4"> <a href="assets/poodle/a dog with a rainbow texture/extended_attn_random_baseline_fps_30.mp4"> <video  width="300" src="assets/poodle/a dog with a rainbow texture/extended_attn_random_baseline_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/bear.mp4"> <a href="assets/bear.mp4"> <video  width="300" src="assets/bear.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/ablation/hyper-param/threshold/thr0.5.mp4"> <a href="assets/"> <video  width="300" src="assets/ablation/hyper-param/threshold/thr0.5.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/bear_vangoh_60.mp4"> <a href="assets/bear_vangoh_60.mp4"> <video  width="300" src="assets/bear_vangoh_60.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/ablation/hyper-param/threshold/thr0.7.mp4"> <a href="assets/ablation/hyper-param/threshold/thr0.7.mp4"> <video  width="300" src="assets/ablation/hyper-param/threshold/thr0.7.mp4" autoplay loop controls muted/> </a> </a></th>
+          
+        </tr>
+        <tr>
+          <th style="font-size: 16px">Comparison between GMFlow and RAFT.</th>
+          <th style="font-size: 16px">GMFlow</th>
+          <th style="font-size: 16px">RAFT</th>
+          <!-- <th style="font-size: 16px">threshold=0.7</th> -->
+
+      </tr>
+      <tr>
+          <th><a href="assets/bear.mp4"> <a href="assets/bear.mp4"> <video  width="300" src="assets/bear.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/ablation/different flow extractor/gmflow.mp4"> <a href="assets/"> <video  width="300" src="assets/ablation/different flow extractor/gmflow.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/bear_vangoh_60.mp4"> <a href="assets/bear_vangoh_60.mp4"> <video  width="300" src="assets/ablation/effect of cross_frame_attn/wo_latent_alignment.mp4" autoplay loop controls muted/> </a> </a></th>
+          <!-- <th><a href="assets/ablation/hyper-param/threshold/thr0.7.mp4"> <a href="assets/ablation/hyper-param/threshold/thr0.7.mp4"> <video  width="300" src="assets/ablation/hyper-param/threshold/thr0.7.mp4" autoplay loop controls muted/> </a> </a></th> -->
           
         </tr>
 
@@ -349,6 +362,36 @@
 
   </tbody>
 </table>
+
+<p align="left"> Ablation studies on the effect of latent alignment, which constrains the query tokens, and cross-frame attention, which constraines the key and value tokens.
+</p>
+<br/>
+
+<table  width="1200" align="center">
+  <tbody>
+      <!-- <th>A</th>
+      <th>B</th>
+      <th>C</th> -->
+      <tr>
+          <th style="font-size: 16px">Original video</th>
+          <th style="font-size: 16px">Ours w/o cross-frame attention</th>
+          <th style="font-size: 16px">Ours w/o latent alignment</th>
+          <th style="font-size: 16px">Ours</th>
+      </tr>
+      <tr>
+          <th><a href="assets/bear.mp4"> <a href="assets/bear.mp4"> <video  width="300" src="assets/bear.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/ablation/effect of cross_frame_attn/wo_cross_frame_attn.mp4"> <a href="assets/ablation/effect of cross_frame_attn/wo_cross_frame_attn.mp4"> <video  width="300" src="assets/ablation/effect of cross_frame_attn/wo_cross_frame_attn.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/ablation/effect of cross_frame_attn/wo_latent_alignment.mp4"> <a href="assets/ablation/effect of cross_frame_attn/wo_latent_alignment.mp4"> <video  width="300" src="assets/ablation/effect of cross_frame_attn/wo_latent_alignment.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/ablation/effect of cross_frame_attn/ours.mp4"> <a href="assets/ablation/effect of cross_frame_attn/ours.mp4"> <video  width="300" src="assets/ablation/effect of cross_frame_attn/ours.mp4" autoplay loop controls muted/> </a> </a></th>
+          
+        </tr>
+
+      <tr> <td><br /></td> </tr>
+
+  </tbody>
+</table>
+
+
 <!------------------ END SECTION ------------------>	
 
   <p><br>
