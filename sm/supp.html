@@ -73,10 +73,10 @@
               </tr>
               <tr>
                   <th><a href="assets/tesla.mp4"> <a href="assets/tesla.mp4"> <video  width="300" src="assets/tesla.mp4" autoplay loop controls muted /> </a> </a></th>
-                  <th><a href="assets/tesla_pink-car.mp4"> <a href="assetstesla_pink-car.mp4"> <video  width="300" src="assets/tesla_pink-car.mp4" autoplay loop controls muted/> </a> </a></th>
                   <th><a href="assets/tesla_ice-sculpture.mp4"> <a href="assets/tesla_ice-sculpture.mp4"> <video  width="300" src="assets/tesla_ice-sculpture.mp4" autoplay loop controls muted/> </a> </a></th>
                   <th><a href="assets/tesla_sand-sculpture.mp4"> <a href="assets/tesla_sand-sculpture.mp4"> <video  width="300" src="assets/tesla_sand-sculpture.mp4" autoplay loop controls muted/> </a> </a></th>
-              </tr>
+                  <th><a href="assets/tesla_pink-car.mp4"> <a href="assetstesla_pink-car.mp4"> <video  width="300" src="assets/tesla_pink-car.mp4" autoplay loop controls muted/> </a> </a></th>
+                </tr>
                 <tr>
                     <th style="font-size: 16px">Input video</th>
                     <!-- <th style="font-family: Chalkduster">"A bus"</th> -->
@@ -384,6 +384,62 @@
           <th><a href="assets/bear.mp4"> <a href="assets/bear.mp4"> <video  width="300" src="assets/bear.mp4" autoplay loop controls muted/> </a> </a></th>
           <th><a href="assets/ablation/different flow extractor/gmflow.mp4"> <a href="assets/"> <video  width="300" src="assets/ablation/different flow extractor/gmflow.mp4" autoplay loop controls muted/> </a> </a></th>
           <th><a href="assets/bear_vangoh_60.mp4"> <a href="assets/bear_vangoh_60.mp4"> <video  width="300" src="assets/ablation/effect of cross_frame_attn/wo_latent_alignment.mp4" autoplay loop controls muted/> </a> </a></th>
+          <!-- <th><a href="assets/ablation/hyper-param/threshold/thr0.7.mp4"> <a href="assets/ablation/hyper-param/threshold/thr0.7.mp4"> <video  width="300" src="assets/ablation/hyper-param/threshold/thr0.7.mp4" autoplay loop controls muted/> </a> </a></th> -->
+          
+        </tr>
+
+      <tr> <td><br /></td> </tr>
+
+  </tbody>
+</table>
+
+<p align="left"> LatentWarp on Stable Diffusion model without Controlnet.
+</p>
+<br/>
+
+<table  width="1200" align="center">
+  <tbody>
+      <!-- <th>A</th>
+      <th>B</th>
+      <th>C</th> -->
+      <tr>
+          <th style="font-size: 16px">&alpha; ranges from 4 to 6. </th>
+          <th style="font-size: 16px">&alpha;=4</th>
+          <th style="font-size: 16px">&alpha;=5(Ours) </th>
+          <th style="font-size: 16px">&alpha;=6</th>
+      </tr>
+      <tr>
+          <th><a href="assets/bear.mp4"> <a href="assets/bear.mp4"> <video  width="300" src="assets/bear.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/ablation/hyper-param/alpha/alpha4.mp4"> <a href="assets/ablation/hyper-param/alpha/alpha4.mp4"> <video  width="300" src="assets/ablation/hyper-param/alpha/alpha4.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/bear_vangoh_60.mp4"> <a href="assets/bear_vangoh_60.mp4"> <video  width="300" src="assets/bear_vangoh_60.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/ablation/hyper-param/alpha/alpha6.mp4"> <a href="assets/ablation/hyper-param/alpha/alpha6.mp4"> <video  width="300" src="assets/ablation/hyper-param/alpha/alpha6.mp4" autoplay loop controls muted/> </a> </a></th>
+          
+        </tr>
+        <tr>
+          <th style="font-size: 16px">Threshold ranges from 0.5 to 0.7 .</th>
+          <th style="font-size: 16px">threshold=0.5</th>
+          <th style="font-size: 16px">threshold=0.6(Ours)</th>
+          <th style="font-size: 16px">threshold=0.7</th>
+
+      </tr>
+      <tr>
+          <th><a href="assets/bear.mp4"> <a href="assets/bear.mp4"> <video  width="300" src="assets/bear.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/ablation/hyper-param/threshold/thr0.5.mp4"> <a href="assets/"> <video  width="300" src="assets/ablation/hyper-param/threshold/thr0.5.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/bear_vangoh_60.mp4"> <a href="assets/bear_vangoh_60.mp4"> <video  width="300" src="assets/bear_vangoh_60.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/ablation/hyper-param/threshold/thr0.7.mp4"> <a href="assets/ablation/hyper-param/threshold/thr0.7.mp4"> <video  width="300" src="assets/ablation/hyper-param/threshold/thr0.7.mp4" autoplay loop controls muted/> </a> </a></th>
+          
+        </tr>
+        <tr>
+          <th style="font-size: 16px">Comparison between GMFlow and RAFT.</th>
+          <th style="font-size: 16px">GMFlow</th>
+          <th style="font-size: 16px">RAFT</th>
+          <!-- <th style="font-size: 16px">threshold=0.7</th> -->
+
+      </tr>
+      <tr>
+          <th><a href="assets/bear.mp4"> <a href="assets/bear.mp4"> <video  width="300" src="assets/bear.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/ablation/different flow extractor/gmflow.mp4"> <a href="assets/"> <video  width="300" src="assets/ablation/different flow extractor/gmflow.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="assets/bear_vangoh_60.mp4"> <a href="assets/bear_vangoh_60.mp4"> <video  width="300" src="assets/bear_vangoh_60.mp4" autoplay loop controls muted/> </a> </a></th>
           <!-- <th><a href="assets/ablation/hyper-param/threshold/thr0.7.mp4"> <a href="assets/ablation/hyper-param/threshold/thr0.7.mp4"> <video  width="300" src="assets/ablation/hyper-param/threshold/thr0.7.mp4" autoplay loop controls muted/> </a> </a></th> -->
           
         </tr>
